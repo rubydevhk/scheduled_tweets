@@ -7,8 +7,8 @@ class TwitterAccountsController < ApplicationController
   end
 
   def destroy
-    @twitter_accounts.destroy
-    redirect_to twitter_accounts_path, notice: "Successfully disconnected @#{@twitter_accounts.username}"
+    @twitter_account.destroy
+    redirect_to twitter_accounts_path, notice: "Successfully disconnected @#{@twitter_account.username}"
   end
 
   private
